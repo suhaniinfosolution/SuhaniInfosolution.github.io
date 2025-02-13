@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Solutions - Cloud Backup & Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: #0056b3;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            background: #003d80;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        #services {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+        }
+        .service-item {
+    text-align: center;
+    font-weight: bold;
+}
+.service-item ul {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 20px;
+}
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+		
+		#intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 30s infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+
+ #about {
+        max-width: 1200px; /* Section width */
+        margin: 50px auto; /* Centering with top-bottom spacing */
+        padding: 30px; /* Inner padding for spacing */
+        background: #ffffff; /* White background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+        border-radius: 10px; /* Smooth rounded corners */
+        line-height: 1.8; /* Line spacing for readability */
+    }
+
+    .about-container h2, 
+    .about-container h3 {
+        color: #0056b3; /* Blue heading color */
+        margin-bottom: 15px;
+    }
+
+    .about-container p {
+        margin-bottom: 15px; /* Gap between paragraphs */
+    }
+
+    .about-container ul {
+        margin-bottom: 20px; /* Gap after list */
+        padding-left: 20px; /* Left space for bullet points */
+    }
+
+    .highlight {
+        color: #d9534f; /* Highlighted text in red */
+        font-weight: bold;
+    }
+ 
+ 
+ {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            background: #0056b3;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #003d80;
+        }
+    </style>
+
+</head>
+<body>
+    <header style="text-align: left; padding-left: 20px;">Suhani Infosolution</header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+	
+<!-- Add Intro Section Below Hero Section -->
+<section id="intro">
+    <div class="intro-container">
+        <h2>Welcome to Suhani Infosolution</h2>
+        <p style="margin-top: 15px; margin-bottom: 10px;">At Suhani Infosolution, we provide cutting-edge IT solutions tailored to meet your business needs. 
+           From secure cloud backups to advanced cybersecurity, we ensure your business stays ahead in the digital era.
+       Our expertise spans across IT infrastructure, managed security, disaster recovery, and consulting, 
+           making us your trusted technology partner.</p>		   
+    </div>
+</section>
+
+
+
+<!-- Existing Services Section -->
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">Cloud Solutions (Microsoft Azure & AWS)
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Scalable Infrastructure</li>
+        <li>Secure Data Management</li>
+        <li>Hybrid Cloud Solutions</li>
+        <li>Cloud Migration Services</li>
+    </ul>
+</div>
+            <div class="service-item">Managed Backups (Online & Offline)
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Automated Backup Solutions</li>
+        <li>Disaster Recovery Plans</li>
+        <li>On-Premises & Cloud Storage</li>
+        <li>Data Encryption & Security</li>
+    </ul>
+</div>
+            <div class="service-item">Networking & Cabling
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>LAN & WAN Setup</li>
+        <li>Structured Cabling</li>
+        <li>Wireless Network Solutions</li>
+        <li>Network Troubleshooting</li>
+    </ul>
+</div>
+            <div class="service-item">Managed Security Solutions
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Threat Monitoring & Response</li>
+        <li>Firewall Implementation</li>
+        <li>End-to-End Data Protection</li>
+        <li>Security Audits & Compliance</li>
+    </ul>
+</div>
+            <div class="service-item">Anti-Spam & Antivirus Solutions
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Email Security & Filtering</li>
+        <li>Real-Time Threat Protection</li>
+        <li>Malware & Phishing Defense</li>
+        <li>Automated Security Updates</li>
+    </ul>
+</div>
+            <div class="service-item">IT Helpdesk & Support
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Server, Storage, Desktop, Laptop, Assembled PC</li>
+        <li>Thin Client</li>
+        <li>Printer, Label Printer, Bar Code Printer, Fax, Photo Copier</li>
+        <li>Anti Virus</li>
+        <li>Router, Modem, Switch, Rack, CAT6 Cable</li>
+        <li>Bio Matrix with Pay Roll Solution</li>
+        <li>CCTV (HD & IP), Access control, Audio Video Conferencing</li>
+        <li>UPS & Battery - Online & Offline</li>
+        <li>Automatic & Integration</li>
+    </ul>
+</div>
+            <div class="service-item">Disaster Recovery Solutions
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Business Continuity Planning</li>
+        <li>Data Backup & Restoration</li>
+        <li>Failover Systems</li>
+        <li>Emergency Response Services</li>
+    </ul>
+</div>
+            <div class="service-item">IT Consulting & Strategy
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Technology Roadmap Development</li>
+        <li>IT Budgeting & Forecasting</li>
+        <li>Infrastructure Optimization</li>
+        <li>Digital Transformation Strategies</li>
+    </ul>
+</div>
+            <div class="service-item">Compliance & Risk Management
+    <ul style="margin-top: 15px; margin-bottom: 10px;">
+        <li>Dell Server</li>
+        <li>HP Server</li>
+        <li>Lenovo Server</li>
+        <li>IBM Server</li>
+    </ul>
+</div>
+            <div class="service-item">Accounting & Other Software
+                <ul style="margin-top: 15px; margin-bottom: 10px;">
+                    <li>Tally & Integration Services</li>
+                    <li>SAP</li>
+                    <li>ERP</li>
+                    <li>Software Version Control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	
+	<section id="about">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>Welcome to <span class="highlight">Suhani Infosolution</span>, a leading provider of cutting-edge IT solutions designed to empower businesses in an ever-evolving digital landscape. With years of expertise and a commitment to excellence, we offer secure, scalable, and efficient technology solutions to help organizations thrive.</p>
+
+        <p>At Suhani Infosolution, we understand that technology is the backbone of modern businesses. That’s why we specialize in delivering tailored IT services that enhance operational efficiency, strengthen security, and drive innovation. Whether you are a startup, SME, or a large enterprise, we have the expertise to meet your unique requirements.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li><strong>Expert Team:</strong> Our certified professionals bring industry-leading expertise and innovative strategies to every project.</li>
+            <li><strong>Customer-Centric Approach:</strong> We prioritize your business needs and offer personalized IT solutions for optimal growth.</li>
+            <li><strong>24/7 Support:</strong> Our dedicated team ensures that your IT infrastructure remains secure and operational round the clock.</li>
+            <li><strong>Scalable Solutions:</strong> From startups to enterprises, our services scale according to your business demands.</li>
+        </ul>
+
+        <h3>Our Key Services</h3>
+        <ul>
+            <li><strong>Cloud Solutions:</strong> Secure, flexible, and cost-effective cloud computing with Microsoft Azure & AWS.</li>
+            <li><strong>Managed Security & IT Support:</strong> Proactive monitoring, cybersecurity solutions, and IT infrastructure management.</li>
+            <li><strong>Networking & Data Cabling:</strong> High-performance network setup, structured cabling, and seamless connectivity solutions.</li>
+            <li><strong>Disaster Recovery & Backup Solutions:</strong> Reliable backup systems to protect your critical business data.</li>
+            <li><strong>Compliance & Risk Management:</strong> Ensuring regulatory compliance and minimizing IT risks for a secure business environment.</li>
+        </ul>
+
+        <p>We believe in forging long-term partnerships with our clients, delivering high-quality solutions that evolve with your business. Whether you need IT consultation, infrastructure management, or cybersecurity expertise, <span class="highlight">Suhani Infosolution</span> is here to help.</p>
+
+        <p><strong>Partner with us today</strong> and take the first step towards a smarter, more secure digital future!</p>
+    </div>
+</section>
+
+<form action="https://formsubmit.co/suhaniinfosolution@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+	
+    
+    <footer>
+        <p>Contact us: <a href="mailto:info@suhaniinfosolution.com">info@suhaniinfosolution.com</a> | Phone: +91-XXXXXXXXXX</p>
+        <p>&copy; 2025 Suhani Infosolution. All rights reserved.</p>
+    </footer>
+	
+</body>
+</html>
