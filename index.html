@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Solutions - Cloud Backup & Security</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
         * {
             margin: 0;
@@ -187,11 +188,95 @@
         button:hover {
             background: #003d80;
         }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e63946;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top:hover {
+    background: #c82333;
+}
+
+
+
+.contact-form {
+        max-width: 500px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #0056b3;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #0056b3;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+    }
+    .contact-form button {
+        width: 100%;
+        background: #0056b3;
+        color: white;
+        padding: 12px;
+        margin-top: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .contact-form button:hover {
+        background: #003d80;
+    }
+	
     </style>
 
 </head>
 <body>
-    <header style="text-align: left; padding-left: 20px;">Suhani Infosolution</header>
+    
+	<!-- Include Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #0056b3; color: white;">
+    <div style="font-size: 24px; font-weight: bold;">Suhani Infosolution</div>
+    <div style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: flex-end;">
+        ☎ 9958349663
+    </div>
+</header>
+
+
+
+
     <nav>
         <ul>
             <li><a href="#services">Services</a></li>
@@ -211,6 +296,22 @@
     </div>
 </section>
 
+<button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "flex";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
 
 
 <!-- Existing Services Section -->
@@ -336,23 +437,30 @@
     </div>
 </section>
 
-<form action="https://formsubmit.co/suhaniinfosolution@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    
-    <!-- Redirect After Successful Submission -->
-    <input type="hidden" name="_next" value="https://suhaniinfosolution.github.io/">
-    
-    <button type="submit">Send</button>
-</form>
+<section id="contact">
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/suhaniinfosolution@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <!-- Redirect After Successful Submission -->
+        <input type="hidden" name="_next" value="https://suhaniinfosolution.github.io/">
+        
+        <button type="submit">Send Message</button>
+    </form>
+</div></Section>
 
-	
+<!-- Scroll to Top Button -->
+ 
     
     <footer>
-        <p>Contact us: <a href="mailto:info@suhaniinfosolution.com">info@suhaniinfosolution.com</a> | Phone: +91-XXXXXXXXXX</p>
+        <p>Contact us: <a href="mailto:suhaniinfosolution@gmail.com">suhaniinfosolution@gmail.com</a> | Phone: +91-9958349663</p>
         <p>&copy; 2025 Suhani Infosolution. All rights reserved.</p>
     </footer>
+	
+	
 	
 </body>
 </html>
