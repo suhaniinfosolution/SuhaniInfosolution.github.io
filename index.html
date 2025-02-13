@@ -339,9 +339,12 @@
 <form action="https://formsubmit.co/suhaniinfosolution@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="subject" placeholder="Subject" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
+    
+    <!-- Redirect After Successful Submission -->
+    <input type="hidden" name="_next" value="https://suhaniinfosolution.github.io/">
+    
+    <button type="submit">Send</button>
 </form>
 
 	
